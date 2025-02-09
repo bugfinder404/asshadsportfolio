@@ -31,8 +31,7 @@ const TypewriterEffect = ({ text }) => {
 
 const BackgroundEffect = () => (
   <div className="absolute inset-0 overflow-hidden">
-    <div className="absolute inset-0 bg-gradient-to-r from-[#081b29]/20 to-[#081b29]/20 blur-3xl animate-pulse" />
-    <div className="absolute inset-0 bg-gradient-to-tr from-[#081b29]/10 via-transparent to-[#081b29]/10 blur-2xl animate-float" />
+    <div className="absolute inset-0 bg-[#081b29]" />
   </div>
 );
 
@@ -65,52 +64,93 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
     return () => clearTimeout(timer);
   }, [onLoadingComplete]);
 
+  const containerVariants = {
+    exit: {
+      opacity: 0,
+      scale: 1.1,
+      filter: 'blur(10px)',
+      transition: {
+        duration: 0.8,
+        ease: 'easeInOut',
+        when: 'beforeChildren',
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const childVariants = {
+    exit: {
+      y: -20,
+      opacity: 0,
+      transition: {
+        duration: 0.4,
+        ease: 'easeInOut',
+      },
+    },
+  };
+
   return (
     <AnimatePresence>
       {isLoading && (
         <motion.div
-          className="fixed inset-0 bg-[#081b29]"
+          className="fixed inset-0 bg-[#081b29] text-[#00abf0]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity: 0, scale: 1.1, filter: 'blur(10px)', transition: { duration: 0.8, ease: 'easeInOut' } }}
+          exit="exit"
+          variants={containerVariants}
         >
           <BackgroundEffect />
 
           <div className="relative min-h-screen flex items-center justify-center px-4">
             <div className="w-full max-w-4xl mx-auto">
-              {/* Icons */}
-              <div className="flex justify-center gap-3 sm:gap-4 md:gap-8 mb-6 sm:mb-8 md:mb-12">
+              <motion.div
+                className="flex justify-center gap-3 sm:gap-4 md:gap-8 mb-6 sm:mb-8 md:mb-12"
+                variants={childVariants}
+              >
                 {[Code2, User, Github].map((Icon, index) => (
-                  <div key={index} data-aos="fade-down" data-aos-delay={index * 200}>
+                  <div
+                    key={index}
+                    data-aos="fade-down"
+                    data-aos-delay={index * 200}
+                  >
                     <IconButton Icon={Icon} />
                   </div>
                 ))}
-              </div>
+              </motion.div>
 
-              {/* Welcome Text */}
-              <div className="text-center mb-6 sm:mb-8 md:mb-12">
-                <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#00abf0]">
-                  Welcome To My Portfolio Website
+              <motion.div
+                className="text-center mb-6 sm:mb-8 md:mb-12"
+                variants={childVariants}
+              >
+                <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#00abf0] space-y-2 sm:space-y-4">
+                  <div className="mb-2 sm:mb-4">
+                    <span data-aos="fade-right" data-aos-delay="200">Welcome</span>{' '}
+                    <span data-aos="fade-right" data-aos-delay="400">To</span>{' '}
+                    <span data-aos="fade-right" data-aos-delay="600">My</span>
+                  </div>
+                  <div>
+                    <span data-aos="fade-up" data-aos-delay="800">Portfolio</span>{' '}
+                    <span data-aos="fade-up" data-aos-delay="1000">Website</span>
+                  </div>
                 </h1>
-              </div>
+              </motion.div>
 
-              {/* Website Link */}
-              <div className="text-center" data-aos="fade-up" data-aos-delay="1200">
+              <motion.div
+                className="text-center"
+                variants={childVariants}
+                data-aos="fade-up"
+                data-aos-delay="1200"
+              >
                 <a
                   href="https://www.asshadportfolio.com"
-                  className="inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full relative group hover:scale-105 transition-transform duration-300"
+                  className="inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full text-[#00abf0]"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#00abf0]/20 to-[#00abf0]/20 rounded-full blur-md group-hover:blur-lg transition-all duration-300" />
-                  <div className="relative flex items-center gap-2 text-lg sm:text-xl md:text-2xl text-[#00abf0]">
-                    <Globe className="w-4 h-4 sm:w-5 sm:h-5 text-[#00abf0]" />
-                    <span>
-                      <TypewriterEffect text="www.asshadportfolio.com" />
-                    </span>
-                  </div>
+                  <Globe className="w-4 h-4 sm:w-5 sm:h-5 text-[#00abf0]" />
+                  <TypewriterEffect text="www.asshadportfolio.com" />
                 </a>
-              </div>
+              </motion.div>
             </div>
           </div>
         </motion.div>
