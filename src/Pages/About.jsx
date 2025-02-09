@@ -16,7 +16,7 @@ const Header = memo(() => (
   <div className="text-center lg:mb-8 mb-2 px-[5%]">
     <div className="inline-block relative group">
       <h2
-        className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]"
+        className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00abf0] to-[#00abf0]"
         data-aos="zoom-in-up"
         data-aos-duration="600"
       >
@@ -28,9 +28,9 @@ const Header = memo(() => (
       data-aos="zoom-in-up"
       data-aos-duration="800"
     >
-      <Sparkles className="w-5 h-5 text-purple-400" />
+      <Sparkles className="w-5 h-5 text-blue-400" />
       Transforming ideas into digital experiences
-      <Sparkles className="w-5 h-5 text-purple-400" />
+      <Sparkles className="w-5 h-5 text-blue-400" />
     </p>
   </div>
 ));
@@ -50,7 +50,7 @@ const ProfileImage = memo(() => (
 
           {/* Optimized overlay effects - disabled on mobile */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40 z-10 transition-opacity duration-700 group-hover:opacity-0 hidden sm:block" />
-          <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 via-transparent to-blue-500/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 hidden sm:block" />
+          <div className="absolute inset-0 bg-gradient-to-t from-#00abf0-500/20 via-transparent to-blue-500/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 hidden sm:block" />
 
           <img
             src="/Photo.png"
@@ -218,7 +218,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1000"
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00abf0] to-[#00abf0]">
                 Hello, I'm
               </span>
               <span
@@ -248,7 +248,7 @@ const AboutPage = () => {
                 <button
                   data-aos="fade-up"
                   data-aos-duration="800"
-                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl animate-bounce-slow"
+                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#00abf0] to-[#00abf0] text-white font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl animate-bounce-slow"
                 >
                   <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Download CV
                 </button>
@@ -257,7 +257,7 @@ const AboutPage = () => {
                 <button
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg border border-[#a855f7]/50 text-[#a855f7] font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 hover:bg-[#a855f7]/10 animate-bounce-slow delay-200"
+                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg border border-[#00abf0]/50 text-[#00abf0] font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 hover:bg-[#00abf0]/10 animate-bounce-slow delay-200"
                 >
                   <Code className="w-4 h-4 sm:w-5 sm:h-5" /> View Projects
                 </button>
