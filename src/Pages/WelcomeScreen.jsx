@@ -130,21 +130,21 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                     <span
                       data-aos="fade-right"
                       data-aos-delay="200"
-                      className="inline-block px-2 bg-gradient-to-r from-#00abf0 via-#00abf0-200 to-#00abf0-200 bg-clip-text text-transparent"
+                      className="inline-block px-2 bg-#00abf0 bg-clip-text text-transparent"
                     >
                       Welcome
                     </span>{' '}
                     <span
                       data-aos="fade-right"
                       data-aos-delay="400"
-                      className="inline-block px-2 bg-gradient-to-r from-#00abf0 via-#00abf0-200 to-#00abf0-200 bg-clip-text text-transparent"
+                      className="inline-block px-2 bg-#00abf0 bg-clip-text text-transparent"
                     >
                       To
                     </span>{' '}
                     <span
                       data-aos="fade-right"
                       data-aos-delay="600"
-                      className="inline-block px-2 bg-gradient-to-r from-#00abf0 via-#00abf0-200 to-#00abf0-200 bg-clip-text text-transparent"
+                      className="inline-block px-2 bg-#00abf0 bg-clip-text text-transparent"
                     >
                       My
                     </span>
@@ -153,14 +153,14 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                     <span
                       data-aos="fade-up"
                       data-aos-delay="800"
-                      className="inline-block px-2 bg-gradient-to-r from-#00abf0-600 to-#00abf0-600 bg-clip-text text-transparent"
+                      className="inline-block px-2 bg-#00abf0 bg-clip-text text-transparent"
                     >
                       Portfolio
                     </span>{' '}
                     <span
                       data-aos="fade-up"
                       data-aos-delay="1000"
-                      className="inline-block px-2 bg-gradient-to-r from-#00abf0-600 to-#00abf0-600 bg-clip-text text-transparent"
+                      className="inline-block px-2 bg-#00abf0 bg-clip-text text-transparent"
                     >
                       Website
                     </span>
@@ -181,10 +181,10 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-#00abf0-600/20 to-#00abf0-600/20 rounded-full blur-md group-hover:blur-lg transition-all duration-300" />
+                  <div className="absolute inset-0 bg-#00abf0 rounded-full blur-md group-hover:blur-lg transition-all duration-300" />
                   <div className="relative flex items-center gap-2 text-lg sm:text-xl md:text-2xl">
-                    <Globe className="w-4 h-4 sm:w-5 sm:h-5 text-#00abf0-600" />
-                    <span className="bg-gradient-to-r from-#00abf0-600 to-#00abf0-600 bg-clip-text text-transparent">
+                    <Globe className="w-4 h-4 sm:w-5 sm:h-5 text-#00abf0" />
+                    <span className="bg-#00abf0 bg-clip-text text-transparent">
                       <TypewriterEffect text="www.asshadportfolio.com" />
                     </span>
                   </div>
