@@ -94,7 +94,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
     <AnimatePresence>
       {isLoading && (
         <motion.div
-          className="fixed inset-0 bg-[#030014]"
+          className="fixed inset-0 bg-[#081b29]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit="exit"
@@ -153,7 +153,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                     <span
                       data-aos="fade-up"
                       data-aos-delay="800"
-                      className="inline-block px-2 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"
+                      className="inline-block px-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
                     >
                       Portfolio
                     </span>{' '}

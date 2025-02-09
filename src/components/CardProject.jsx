@@ -21,8 +21,8 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
 
   return (
     <div className="group relative w-full">
-      <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-lg border border-white/10 shadow-2xl transition-all duration-300 hover:shadow-purple-500/20">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
+      <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-lg border border-white/10 shadow-2xl transition-all duration-300 hover:shadow-blue-500/20">
+        <div className="absolute inset-0 bg-gradient-to-br from-#00abf0-500/10 via-#00abf0-500/10 to-#00abf0-500/10 opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
 
         <div className="relative p-5 z-10">
           <div className="relative overflow-hidden rounded-lg">
@@ -77,7 +77,7 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
             </div>
           </div>
 
-          <div className="absolute inset-0 border border-white/0 group-hover:border-purple-500/50 rounded-xl transition-colors duration-300 -z-50"></div>
+          <div className="absolute inset-0 border border-white/0 group-hover:border-blue-500/50 rounded-xl transition-colors duration-300 -z-50"></div>
         </div>
       </div>
     </div>

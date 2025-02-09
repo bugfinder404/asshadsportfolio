@@ -16,11 +16,11 @@ const Comment = memo(({ comment, formatDate, index }) => (
                 <img
                     src={comment.profileImage}
                     alt={`${comment.userName}'s profile`}
-                    className="w-10 h-10 rounded-full object-cover border-2 border-indigo-500/30"
+                    className="w-10 h-10 rounded-full object-cover border-2 border-#00abf0-500/30"
                     loading="lazy"
                 />
             ) : (
-                <div className="p-2 rounded-full bg-indigo-500/20 text-indigo-400 group-hover:bg-indigo-500/30 transition-colors">
+                <div className="p-2 rounded-full bg-#00abf0-500/20 text-blue-400 group-hover:bg-blue-500/30 transition-colors">
                     <UserCircle2 className="w-5 h-5" />
                 </div>
             )}
@@ -85,9 +85,9 @@ const CommentForm = memo(({ onSubmit, isSubmitting, error }) => {
                 <input
                     type="text"
                     value={userName}
-                    onChange={(e) => setUserName(e.target.value)}z
+                    onChange={(e) => setUserName(e.target.value)}
                     placeholder="Enter your name"
-                    className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all"
+                    className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-#00abf0-500 focus:ring-2 focus:ring-#00abf0-500/20 transition-all"
                     required
                 />
             </div>
@@ -101,7 +101,7 @@ const CommentForm = memo(({ onSubmit, isSubmitting, error }) => {
                     value={newComment}
                     onChange={handleTextareaChange}
                     placeholder="Write your message here..."
-                    className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all resize-none min-h-[120px]"
+                    className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-#00abf0-500 focus:ring-2 focus:ring-#00abf0-500/20 transition-all resize-none min-h-[120px]"
                     required
                 />
             </div>
@@ -116,7 +116,7 @@ const CommentForm = memo(({ onSubmit, isSubmitting, error }) => {
                             <img
                                 src={imagePreview}
                                 alt="Profile preview"
-                                className="w-16 h-16 rounded-full object-cover border-2 border-indigo-500/50"
+                                className="w-16 h-16 rounded-full object-cover border-2 border-#00abf0-500/50"
                             />
                             <button
                                 type="button"
@@ -143,7 +143,7 @@ const CommentForm = memo(({ onSubmit, isSubmitting, error }) => {
                             <button
                                 type="button"
                                 onClick={() => fileInputRef.current?.click()}
-                                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-indigo-500/20 text-indigo-400 hover:bg-indigo-500/30 transition-all border border-dashed border-indigo-500/50 hover:border-indigo-500 group"
+                                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-#00abf0-500/20 text-blue-400 hover:bg-#00abf0-500/30 transition-all border border-dashed border-blue-500/50 hover:border-#00abf0-500 group"
                             >
                                 <ImagePlus className="w-5 h-5 group-hover:scale-110 transition-transform" />
                                 <span>Choose Profile Photo</span>
@@ -160,7 +160,7 @@ const CommentForm = memo(({ onSubmit, isSubmitting, error }) => {
                 type="submit"
                 disabled={isSubmitting}
                 data-aos="fade-up" data-aos-duration="1000"
-                className="relative w-full h-12 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-xl font-medium text-white overflow-hidden group transition-all duration-300 hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed"
+                className="relative w-full h-12 bg-gradient-to-r from-[#00abf0] to-[#00abf0] rounded-xl font-medium text-white overflow-hidden group transition-all duration-300 hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed"
             >
                 <div className="absolute inset-0 bg-white/20 translate-y-12 group-hover:translate-y-0 transition-transform duration-300" />
                 <div className="relative flex items-center justify-center gap-2">
