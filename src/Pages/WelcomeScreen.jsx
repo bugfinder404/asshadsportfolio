@@ -130,21 +130,21 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                     <span
                       data-aos="fade-right"
                       data-aos-delay="200"
-                      className="inline-block px-2 bg-gradient-to-r from-white via-#00abf0-200 to-#00abf0-200 bg-clip-text text-transparent"
+                      className="inline-block px-2 bg-gradient-to-r from-#00abf0 via-#00abf0-200 to-#00abf0-200 bg-clip-text text-transparent"
                     >
                       Welcome
                     </span>{' '}
                     <span
                       data-aos="fade-right"
                       data-aos-delay="400"
-                      className="inline-block px-2 bg-gradient-to-r from-white via-#00abf0-200 to-#00abf0-200 bg-clip-text text-transparent"
+                      className="inline-block px-2 bg-gradient-to-r from-#00abf0 via-#00abf0-200 to-#00abf0-200 bg-clip-text text-transparent"
                     >
                       To
                     </span>{' '}
                     <span
                       data-aos="fade-right"
                       data-aos-delay="600"
-                      className="inline-block px-2 bg-gradient-to-r from-white via-#00abf0-200 to-#00abf0-200 bg-clip-text text-transparent"
+                      className="inline-block px-2 bg-gradient-to-r from-#00abf0 via-#00abf0-200 to-#00abf0-200 bg-clip-text text-transparent"
                     >
                       My
                     </span>
