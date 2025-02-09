@@ -153,14 +153,14 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                     <span
                       data-aos="fade-up"
                       data-aos-delay="800"
-                      className="inline-block px-2 bg-gradient-to-r from-skyBlue-600 to-skyBlue-600 bg-clip-text text-transparent"
+                      className="inline-block px-2 bg-gradient-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent"
                     >
                       Portfolio
                     </span>{' '}
                     <span
                       data-aos="fade-up"
                       data-aos-delay="1000"
-                      className="inline-block px-2 bg-gradient-to-r from-skyBlue-600 to-skyBlue-600 bg-clip-text text-transparent"
+                      className="inline-block px-2 bg-gradient-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent"
                     >
                       Website
                     </span>
