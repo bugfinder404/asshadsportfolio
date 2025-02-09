@@ -72,9 +72,9 @@ const Navbar = () => {
     <nav
       className={`fixed w-full top-0 z-50 transition-all duration-500 ${
         isOpen
-          ? 'bg-[#030014] opacity-100'
+          ? 'bg-[#081b29] opacity-100'
           : scrolled
-          ? 'bg-[#030014]/50 backdrop-blur-xl'
+          ? 'bg-[#081b29]/50 backdrop-blur-xl'
           : 'bg-transparent'
       }`}
     >
@@ -85,7 +85,7 @@ const Navbar = () => {
             <a
               href="#Home"
               onClick={e => scrollToSection(e, '#Home')}
-              className="text-xl font-bold bg-gradient-to-r from-[#a855f7] to-[#6366f1] bg-clip-text text-transparent"
+              className="text-xl font-bold bg-gradient-to-r from-[#00abf0] to-[#00abf0] bg-clip-text text-transparent"
             >
               Asshad.
             </a>
@@ -104,14 +104,14 @@ const Navbar = () => {
                   <span
                     className={`relative z-10 transition-colors duration-300 ${
                       activeSection === item.href.substring(1)
-                        ? 'bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent font-semibold'
+                        ? 'bg-gradient-to-r from-[#00abf0] to-[#00abf0] bg-clip-text text-transparent font-semibold'
                         : 'text-[#e2d3fd] group-hover:text-white'
                     }`}
                   >
                     {item.label}
                   </span>
                   <span
-                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#6366f1] to-[#a855f7] transform origin-left transition-transform duration-300 ${
+                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#00abf0] to-[#00abf0] transform origin-left transition-transform duration-300 ${
                       activeSection === item.href.substring(1)
                         ? 'scale-x-100'
                         : 'scale-x-0 group-hover:scale-x-100'
